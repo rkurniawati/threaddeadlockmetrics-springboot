@@ -17,8 +17,6 @@ public class Application {
 
     @Bean
     CommandLineRunner runner() {
-        return args -> {
-            logger.info("*** To exit the application, press Ctrl+C");
-        };
+        return args -> logger.info("*** To exit the application, press Ctrl+C");
     }
 }
